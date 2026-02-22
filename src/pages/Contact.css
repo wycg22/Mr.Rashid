@@ -92,3 +92,28 @@
         gap: 2rem;
     }
 }
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    /* 1. Stack the text and the form on top of each other */
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    /* 2. Shrink the massive greeting text */
+    .contact-text h1 {
+        font-size: 2rem;
+    }
+
+    .contact-text p {
+        font-size: 1rem;
+    }
+
+    /* 3. Reduce form padding and shrink the shadow so it doesn't cause side-scrolling */
+    .contact-form-container {
+        padding: 1.5rem;
+        box-shadow: 6px 6px 0px var(--ink-black); 
+    }
+}

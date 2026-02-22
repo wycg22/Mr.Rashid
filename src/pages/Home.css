@@ -72,3 +72,23 @@
     line-height: 1.5;
     margin: 0;
 }
+
+/* src/pages/Home.css */
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1rem; /* Less padding inside the box */
+        margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Shrinks the giant headline */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Shrinks the subtext */
+    }
+    
+    .store-features {
+        grid-template-columns: 1fr; /* Forces the feature boxes into a single column */
+    }
+}

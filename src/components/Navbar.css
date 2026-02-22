@@ -36,3 +36,19 @@
 .nav-links a:hover {
     opacity: 0.6; /* Slight fade when hovering over links */
 }
+
+/* src/components/Navbar.css */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stacks the logo on top of the links */
+        padding: 1rem;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap; /* Allows links to drop to a new line if needed */
+        justify-content: center;
+    }
+}
