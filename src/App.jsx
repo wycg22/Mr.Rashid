@@ -1,5 +1,5 @@
 // src/App.jsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'; // 1. Import the Footer
 import Home from './pages/Home';
@@ -15,9 +15,9 @@ function App() {
           is always pushed to the bottom, even if the page doesn't have much text */}
       <div style={{ minHeight: '80vh' }}>
         <Routes>
-          <Route path="/Mr.Rashid" element={<Home />} />
-          <Route path="/Mr.Rashid/products" element={<Products />} />
-          <Route path="/Mr.Rashid/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
 
