@@ -1,0 +1,94 @@
+/* src/pages/Contact.css */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    margin-top: 2rem;
+}
+
+.contact-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--ink-black);
+}
+
+.contact-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* The Form Container Box */
+.contact-form-container {
+    background-color: #ffffff;
+    border: 3px solid var(--ink-black);
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 12px 12px 0px var(--ink-black); /* Matching the Hero and Product card shadows */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    font-weight: 700;
+    color: var(--ink-black);
+}
+
+/* Styling the inputs and textarea */
+.input-group input,
+.input-group textarea {
+    padding: 0.8rem;
+    font-family: 'Nunito', sans-serif; /* Ensures the font matches the website */
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--off-white);
+    transition: border-color 0.2s ease;
+}
+
+/* Highlight the border when clicking inside the input */
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: var(--ink-black);
+    background-color: #ffffff;
+}
+
+/* Submit Button Styling (matches the Home page CTA) */
+.submit-button {
+    background-color: var(--ink-black);
+    color: var(--off-white);
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 1rem;
+}
+
+.submit-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness: Stacks the text and form on smaller screens */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
