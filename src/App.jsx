@@ -15,9 +15,9 @@ function App() {
           is always pushed to the bottom, even if the page doesn't have much text */}
       <div style={{ minHeight: '80vh' }}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/Mr.Rashid" element={<Home />} />
+          <Route path="/Mr.Rashid/products" element={<Products />} />
+          <Route path="/Mr.Rashid/contact" element={<Contact />} />
         </Routes>
       </div>
 
